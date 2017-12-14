@@ -3,3 +3,7 @@
 ################################################################################
 
 /TokenAuthWebApiCore.Server/bin/Debug
+/TokenAuthWebApiCore.Server/obj
+/TokenAuthWebApiCore.Server.IntegrationTest/bin/Debug
+/TokenAuthWebApiCore.Server.IntegrationTest/obj
+/.vs
