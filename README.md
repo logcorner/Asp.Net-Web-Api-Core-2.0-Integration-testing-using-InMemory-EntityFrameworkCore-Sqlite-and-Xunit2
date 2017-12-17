@@ -21,7 +21,7 @@
                     ValidateLifetime = true
                 };
             });
-  # . open Configure of Startup.cs class and remove this lines of code :
+  # 3. open Configure of Startup.cs class and remove this lines of code :
     app.UseJwtBearerAuthentication(.................)
     and app.UseIdentity()
   # 4 . paste this line of code 
