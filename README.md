@@ -1,7 +1,7 @@
 # Asp.Net-Web-Api-Core-2.0-Integration-testing-using-InMemory-EntityFrameworkCore-Sqlite-and-Xunit2
-#To migrate JW from asp.net core 1.x to asp.net core 2.0 proceed as follows
-#1. Go to project properties and choose .NET Core 2.0 as TargetFramework
-#2. open ConfigureServices of startup.cs file and remove this line of code :
+# To migrate JW from asp.net core 1.x to asp.net core 2.0 proceed as follows
+# 1. Go to project properties and choose .NET Core 2.0 as TargetFramework
+# 2. open ConfigureServices of startup.cs file and remove this line of code :
   
             services.AddIdentity<MyUser, MyRole>().AddEntityFrameworkStores<SecurityContext>();
             services.AddAuthentication((cfg =>
@@ -21,10 +21,10 @@
                     ValidateLifetime = true
                 };
             });
-  #3. open Configure of Startup.cs class and remove this lines of code :
+  # . open Configure of Startup.cs class and remove this lines of code :
     app.UseJwtBearerAuthentication(.................)
     and app.UseIdentity()
-  #4 . paste this line of code 
+  # 4 . paste this line of code 
        app.UseAuthentication();
 
           
